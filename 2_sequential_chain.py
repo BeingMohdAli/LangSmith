@@ -35,6 +35,6 @@ config = {
     'metadata': {'model1':'mistral','model2' : 'mistral'}
 }
 
-result = chain.invoke({'topic': 'Unemployment in India'})
+result = chain.invoke({'topic': 'Unemployment in India'},config = config)
 
 print(result)
