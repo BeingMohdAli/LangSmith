@@ -31,10 +31,11 @@ parser = StrOutputParser()
 chain = prompt1 | model1 | parser | prompt2 | model2 | parser
 
 config = {
+    'run_name':'sequential_chain',
     'tags':['llm', 'report generation', 'summarization'],
     'metadata': {'model1':'mistral','model2' : 'mistral'}
 }
 
-result = chain.invoke({'topic': 'Unemployment in India'},config = config)
+result = chain.invoke({'topic': 'agriculture in India'},config = config)
 
 print(result)
