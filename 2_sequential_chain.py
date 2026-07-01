@@ -1,4 +1,4 @@
-from langchain_openai import ChatOpenAI
+from langchain_mistralai import ChatMistralAI
 from dotenv import load_dotenv
 from langchain_core.prompts import PromptTemplate
 from langchain_core.output_parsers import StrOutputParser
@@ -15,7 +15,10 @@ prompt2 = PromptTemplate(
     input_variables=['text']
 )
 
-model = ChatOpenAI()
+model = ChatMistralAI(
+    model="ministral-3b-latest",
+    temperature=0.7
+)
 
 parser = StrOutputParser()
 
