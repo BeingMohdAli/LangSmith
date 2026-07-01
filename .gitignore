@@ -1,0 +1,39 @@
+
+# Virtual Environment
+venv/
+.venv/
+env/
+
+# Environment Variables (NEVER commit this — contains your API keys!)
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyc
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# VS Code settings
+.vscode/
+
+# PyCharm
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# LangSmith / LangChain cache
+.langchain.db
